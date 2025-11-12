@@ -1,18 +1,13 @@
 #include <Arduino.h>
-
-// put function declarations here:
-int myFunction(int, int);
+#include "until.h"
+float motors[4]; 
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+	Serial.begin(SERIAL_BAUDRATE);
+	print("Initializing flix\n");
+	
+	setupMotors();
 }
-
-void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void loop(){
+  
 }
