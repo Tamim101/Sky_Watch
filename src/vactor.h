@@ -99,3 +99,9 @@ vactor operator * (const float a, const vactor& b ){
 vactor operator + (const float a, const vactor& b){
     return b + a ;
 }
+vactor operator * (const float a, const vactor& b ){
+    return b * a;
+}
+vactor operator + (const float a, const vactor& b){
+    return b + a ;
+}
