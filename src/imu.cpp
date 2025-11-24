@@ -12,8 +12,13 @@
 
 #define MPU6050_ADDR 0x68
 
+// === ESP32-C3 I2C pins (change if your wiring is different) ===
+#define I2C_SDA_PIN 1   // ESP32-C3 IO1  -> MPU6050 SDA
+#define I2C_SCL_PIN 0   // ESP32-C3 IO0  -> MPU6050 SCL
+
 extern Vector acc;
 extern Vector gyro;
+
 
 Vector accBias;
 Vector accScale(1,1,1);
@@ -36,7 +41,11 @@ void readRegs(uint8_t reg, uint8_t *buf, uint8_t len) {
 
 void setupIMU() {
     print("Setup MPU-6050\n");
-    Wire.begin();
+
+    // Use custom I2C pins on ESP32-C3
+    Wire.begin(I2C_SDA_PIN, I2C_SCL_PIN);
+    Wire.setClock(400000);   // 400 kHz I2C (optional but good)
+
     delay(100);
 
     // Wake up
