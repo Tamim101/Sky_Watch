@@ -70,3 +70,15 @@ void testMotor(int n) {
 	sendMotors();
 	print("Done\n");
 }
+void printIMUInfo() {
+    // WHO_AM_I register for MPU6050 = 0x75
+    uint8_t whoami;
+    readRegs(0x75, &whoami, 1);
+
+    print("status: OK\n");
+    print("model: MPU-6050\n");
+    print("who am I: 0x%02X\n", whoami);
+    print("rate: %.0f\n", loopRate);
+    print("gyro: %f %f %f\n", gyro.x, gyro.y, gyro.z);
+    print("acc: %f %f %f\n", acc.x, acc.y, acc.z);
+}
