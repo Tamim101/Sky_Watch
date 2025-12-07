@@ -2,7 +2,7 @@
 
 #include "util.h"
 
-#define MOTOR_0_PIN 2   // rear left
+#define MOTOR_0_PIN 10  // rear left
 #define MOTOR_1_PIN 4   // rear right
 #define MOTOR_2_PIN 5   // front right
 #define MOTOR_3_PIN 6   // front left
