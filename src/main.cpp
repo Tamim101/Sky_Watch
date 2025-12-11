@@ -8,6 +8,13 @@
 #include <esp_system.h>
 #include <WiFi.h>
 #include <WebServer.h>
+// flip code 
+#include "hw_esp32.h"
+#include "attitude.h"
+#include "controller.h"
+#include "modes.h"
+#include "mixer.h"
+#include "config.h"
 
 #define WIFI_ENABLED 1
 
