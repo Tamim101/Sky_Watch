@@ -147,6 +147,9 @@ void handleLog() {
 void setup() {
   Serial.begin(115200);
   print("Initializing flix\n");
+  // flipe 
+  hw_init();
+  modes_init();
 
   bootCount++;
   esp_reset_reason_t reason = esp_reset_reason();
@@ -196,6 +199,39 @@ void loop() {
   readRC();
   estimate();
   control();
+  // flipe code
+  static uint32_t last = micros();
+    uint32_t now = micros();
+    float dt = (now - last) * 1e-6f;
+    if (dt < LOOP_DT) return;
+    last = now;
+
+    // 1. Read hardware
+    float gx, gy, gz, ax, ay, az;
+    float vbat;
+    float thr, rc_roll, rc_pitch, rc_yaw;
+    bool flip_button;
+
+    hw_read_imu(gx, gy, gz, ax, ay, az);
+    hw_read_battery(vbat);
+    hw_read_rc(thr, rc_roll, rc_pitch, rc_yaw, flip_button);
+
+    // 2. Estimate attitude
+    Attitude att = attitude_update(gx, gy, gz, ax, ay, az, dt);
+
+    // 3. Update modes & safety
+    modes_update(att, thr, vbat, flip_button, dt);
+
+    // 4. Control
+    float m1 = 0, m2 = 0, m3 = 0, m4 = 0;
+    if (is_armed()) {
+        controller_update(att, thr,
+                          rc_roll, rc_pitch, rc_yaw,
+                          m1, m2, m3, m4, dt);
+    }
+
+    // 5. Write motors
+    hw_write_motors(m1, m2, m3, m4);
 
   // Before sending motors, remember max requested thrust for debugging
   float maxMotor = motors[0];
