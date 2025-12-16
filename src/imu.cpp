@@ -314,3 +314,8 @@ void printIMUCalibration() {
   print("accel bias: %f %f %f\n", accBias.x, accBias.y, accBias.z);
   print("accel scale:%f %f %f\n", accScale.x, accScale.y, accScale.z);
 }
+void printIMUCalibration() {
+  print("gyro bias: %f %f %f\n", gyroBias.x, gyroBias.y, gyroBias.z);
+  print("accel bias: %f %f %f\n", accBias.x, accBias.y, accBias.z);
+  print("accel scale:%f %f %f\n", accScale.x, accScale.y, accScale.z);
+}
