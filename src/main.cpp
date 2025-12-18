@@ -1,5 +1,3 @@
-// flix.ino
-// Main firmware file for FLiX + Wi-Fi web log / power debug
 
 #include "vector.h"
 #include "quaternion.h"
