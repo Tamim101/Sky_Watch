@@ -138,3 +138,7 @@ void resetParameters() {
 	storage.clear();
 	ESP.restart();
 }
+void resetParameters() {
+	storage.clear();
+	ESP.restart();
+}
