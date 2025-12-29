@@ -24,13 +24,3 @@ void computeLoopRate() {
 		rate = 0;
 	}
 }
-void computeLoopRate() {
-	static float windowStart = 0;
-	static uint32_t rate = 0;
-	rate++;
-	if (t - windowStart >= 1) { // 1 second window
-		loopRate = rate;
-		windowStart = t;
-		rate = 0;
-	}
-}
