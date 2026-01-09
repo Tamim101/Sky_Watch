@@ -2,10 +2,10 @@
 
 #include "util.h"
 
-// #define MOTOR_0_PIN 12  // rear left
-// #define MOTOR_1_PIN 13  // rear right
-// #define MOTOR_2_PIN 16   // front right
-// #define MOTOR_3_PIN 15   // front left
+#define MOTOR_0_PIN 12  // rear left
+#define MOTOR_1_PIN 13  // rear right
+#define MOTOR_2_PIN 16   // front right
+#define MOTOR_3_PIN 15   // front left
 
 // Good combo for ESP32-C3 + brushed motors
 #define PWM_FREQUENCY   78000           // 16 kHz (quiet, safe)
