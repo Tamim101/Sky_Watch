@@ -8,7 +8,7 @@
 #define MOTOR_3_PIN 15   // front left
 
 // Good combo for ESP32-C3 + brushed motors
-#define PWM_FREQUENCY   78000           // 16 kHz (quiet, safe)
+#define PWM_FREQUENCY   18000           // 16 kHz (quiet, safe)
 #define PWM_RESOLUTION  16             // 8-bit (0..255)
 
 // PWM in microseconds equivalent (period = 1e6 / freq)
