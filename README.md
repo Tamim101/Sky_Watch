@@ -241,20 +241,14 @@ Example command for serial monitoring: screen /dev/ttyUSB0 115200 (on Linux).
 Assembly Photos
 Here are step-by-step images of the drone build:
 Failed to load imageView link
-## Assembly Photos
 
-<p align="center">
-  <img src="assets/images/assembly_01.jpg" width="32%" alt="Drone assembly - photo 1" />
-  <img src="assets/images/assembly_02.jpg" width="32%" alt="Drone assembly - photo 2" />
-  <img src="assets/images/assembly_03.jpg" width="32%" alt="Drone assembly - photo 3" />
-</p>
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(1).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.18 PM (1)">
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(2).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.18 PM (2)">
+Failed to load imageView link
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(1).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (1)">
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(2).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (2)">
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(3).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (3)">
 
-<p align="center">
-  <img src="assets/images/assembly_04.jpg" width="32%" alt="Drone assembly - photo 4" />
-  <img src="assets/images/assembly_05.jpg" width="32%" alt="Drone assembly - photo 5" />
-</p>
-
-> Tip: If images look rotated, open them once on your PC and re-save (some WhatsApp photos have rotation metadata).
 Failed to load imageView link
 Failed to load imageView link
 Note: These paths assume the images are in a user.image/ folder in your repo. URL-encode spaces (%20) as shown. For better organization, rename files without spaces/parentheses and move to an assets/ folder.
