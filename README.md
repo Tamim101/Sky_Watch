@@ -208,8 +208,61 @@ accel bias: 0.000000 0.000000 0.000000
 accel scale:1.108088 1.108088 1.108088
 landed: 1
 
+Welcome to my drone project! This repository documents the building process of a custom drone, including hardware assembly, code, and media demonstrations.
+Project Overview
+I'm making a drone from scratch. Key components include:
+
+Frame and motors
+Flight controller (e.g., ESP32 or Arduino-based)
+Propellers and battery
+Optional: Camera for FPV or sensors for autonomy
+
+The goal is to achieve stable flight and basic controls. Future plans: Add GPS navigation and obstacle avoidance.
+Requirements
+
+Hardware: Drone kit (frame, motors, ESC, flight controller), soldering tools, battery.
+Software: Arduino IDE or PlatformIO for firmware flashing.
+Dependencies: Libraries like Servo for motor control, MPU6050 for gyro/accel.
+
+Installation
+
+Clone the repository:textgit clone https://github.com/yourusername/your-drone-repo.git
+Set up your development environment (e.g., install Arduino IDE).
+Upload the firmware to the flight controller via USB.
+
+Usage
+
+Assemble the drone as shown in the photos below.
+Power on the drone and connect via a controller app or serial monitor.
+Run test flights in a safe area.
+Example command for serial monitoring: screen /dev/ttyUSB0 115200 (on Linux).
 
 
-user image 
+Assembly Photos
+Here are step-by-step images of the drone build:
+Failed to load imageView link
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(1).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.18 PM (1)">
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(2).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.18 PM (2)">
+Failed to load imageView link
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(1).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (1)">
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(2).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (2)">
+<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(3).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (3)">
+Failed to load imageView link
+Failed to load imageView link
+Note: These paths assume the images are in a user.image/ folder in your repo. URL-encode spaces (%20) as shown. For better organization, rename files without spaces/parentheses and move to an assets/ folder.
+Demo Videos
+Videos can't play inline on GitHub, so convert to GIFs or link them. Here's how to link:
+Watch Demo Video 1
+Watch Demo Video 2
+For GIFs (after conversion):
+Failed to load imageView link
+Failed to load imageView link
+Troubleshooting
 
-![alt text](<user.image/Screenshot From 2025-10-06 00-09-11.png>) <video controls src="user.image/video6138478052419576221.mp4" title="alt text"></video> ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg>) <video controls src="user.image/video6138478052419576607.mp4" title="alt text"></video> ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg>) ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM.jpeg>) ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.19 PM (1).jpeg>) ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.19 PM (2).jpeg>) ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.19 PM (3).jpeg>) ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.19 PM.jpeg>) ![alt text](<user.image/WhatsApp Image 2026-03-02 at 8.53.20 PM.jpeg>)
+If motors don't spin: Check wiring and calibration.
+Flight instability: Balance propellers and tune PID values.
+
+Contributing
+Feel free to fork and submit pull requests with improvements!
+License
+MIT License - free to use and modify.1.4s
