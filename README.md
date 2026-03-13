@@ -137,7 +137,7 @@ These are the custom build images added from your project shots.
 ![SkyWatch Red LED](<images/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg>)
 
 ### Full setup with multimeter
-![SkyWatch Full Setup](<images/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg>)
+![SkyWatch Full Setup](<user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg>)
 
 ---
 
