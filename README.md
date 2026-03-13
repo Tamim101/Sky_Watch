@@ -125,16 +125,16 @@ Update this section to exactly match your current firmware commands.
 These are the custom build images added from your project shots.
 
 ### Cinematic SkyWatch shot 1
-![SkyWatch User Image 1](<images/WhatsApp Image 2026-03-02 at 8.53.19 PM (1).jpeg>)
+![SkyWatch User Image 1](<user.image/WhatsApp Image 2026-03-02 at 8.53.19 PM (1).jpeg>)
 
 ### Cinematic SkyWatch shot 2
-![SkyWatch User Image 2](<images/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg>)
+![SkyWatch User Image 2](<user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg>)
 
 ### Workbench build
-![SkyWatch Workbench Build](<images/Screenshot From 2025-10-06 00-09-11.png>)
+![SkyWatch Workbench Build](<user.image/Screenshot From 2025-10-06 00-09-11.png>)
 
 ### Drone with red LED
-![SkyWatch Red LED](<images/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg>)
+![SkyWatch Red LED](<user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg>)
 
 ### Full setup with multimeter
 ![SkyWatch Full Setup](<user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg>)
