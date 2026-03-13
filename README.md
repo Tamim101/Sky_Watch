@@ -32,14 +32,13 @@ It uses real-time PID control, IMU attitude estimation, live telemetry, and simp
 ![Close-up with blue LED](images/drone-closeup-blue.jpg)
 
 ---
-
 ## Gallery (Sky_Watch-Style Drone Shots)
-I added **Sky_Watch** (cinematic, clean, movie-like) drone photos for your README header and gallery.  
-Upload the ones you sent me and use these exact markdown lines:
+
+I added **Sky_Watch** (cinematic, clean, movie-like) drone photos for your README header and gallery.
 
 ```markdown
-<image-card alt="Flix-style SkyWatch Drone 1" src="user.image/WhatsApp Image 2026-03-02 at 8.53.19 PM (1).jpeg" ></image-card>
-<image-card alt="Flix-style SkyWatch Drone 2" src="user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg" ></image-card>
-<image-card alt="Workbench build" src="user.image/Screenshot From 2025-10-06 00-09-11.png" ></image-card>
-<image-card alt="Drone with red LED" src="user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg" ></image-card>
-<image-card alt="Full setup with multimeter" src="user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg" ></image-card>
+<image-card alt="Flix-style SkyWatch Drone 1" src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(1" ></image-card>.jpeg)
+<image-card alt="Flix-style SkyWatch Drone 2" src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(2" ></image-card>.jpeg)
+<image-card alt="Workbench build" src="user.image/Screenshot%20From%202025-10-06%2000-09-11.png" ></image-card>
+<image-card alt="Drone with red LED" src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(1" ></image-card>.jpeg)
+<image-card alt="Full setup with multimeter" src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(2" ></image-card>.jpeg)
