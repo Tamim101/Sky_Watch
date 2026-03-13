@@ -33,13 +33,13 @@ It uses real-time PID control, IMU attitude estimation, live telemetry, and simp
 
 ---
 
-## Gallery (Flix-Style Drone Shots)
-I added **flix-style** (cinematic, clean, movie-like) drone photos for your README header and gallery.  
+## Gallery (Sky_Watch-Style Drone Shots)
+I added **Sky_Watch** (cinematic, clean, movie-like) drone photos for your README header and gallery.  
 Upload the ones you sent me and use these exact markdown lines:
 
 ```markdown
-<image-card alt="Flix-style SkyWatch Drone 1" src="images/drone-flix1.jpg" ></image-card>
-<image-card alt="Flix-style SkyWatch Drone 2" src="images/drone-flix2.jpg" ></image-card>
-<image-card alt="Workbench build" src="images/workbench-magnifier.jpg" ></image-card>
-<image-card alt="Drone with red LED" src="images/drone-red-led.jpg" ></image-card>
-<image-card alt="Full setup with multimeter" src="images/setup-multimeter.jpg" ></image-card>
+<image-card alt="Flix-style SkyWatch Drone 1" src="user.image/WhatsApp Image 2026-03-02 at 8.53.19 PM (1).jpeg" ></image-card>
+<image-card alt="Flix-style SkyWatch Drone 2" src="user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (2).jpeg" ></image-card>
+<image-card alt="Workbench build" src="user.image/Screenshot From 2025-10-06 00-09-11.png" ></image-card>
+<image-card alt="Drone with red LED" src="user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg" ></image-card>
+<image-card alt="Full setup with multimeter" src="user.image/WhatsApp Image 2026-03-02 at 8.53.18 PM (1).jpeg" ></image-card>
