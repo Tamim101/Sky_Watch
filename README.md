@@ -1,270 +1,169 @@
-# Sky_Watch
-> make log
-Invalid command: make
-> log
-valid,t,rates.x,rates.y,rates.z,ratesTarget.x,ratesTarget.y,ratesTarget.z,attitude.x,attitude.y,attitude.z,attitudeTarget.x,attitudeTarget.y,attitudeTarget.z,thrustTarget
-> imu
-status: OK
-model: MPU-6500 / clone
-who am I: 0x70
-rate: 520
-gyro: 0.099117 0.061930 -0.092612
-acc:  -1.287238 -4.756902 8.143799
-acc_mag: 9.519
-landed: 1
-gyro bias:  -0.008719 0.000920 0.008538
-accel bias: 0.000000 0.000000 0.000000
-accel scale:1.099232 1.099232 1.099232
-gyro bias:  -0.008719 0.000920 0.008538
-accel bias: 0.000000 0.000000 0.000000
-accel scale:1.099232 1.099232 1.099232
-landed: 1
-> rc
-channels: 1500 1500 1000 1500 1600 0 0 0 0 0 0 0 0 0 0 0 
-roll: 0 pitch: 0 yaw: 0 throttle: 0 mode: 0.6
-mode: STAB
-armed: 0
-> rc
-channels: 1500 1500 1000 1500 1600 0 0 0 0 0 0 0 0 0 0 0 
-roll: 0 pitch: 0 yaw: 0 throttle: 0 mode: 0.6
-mode: STAB
-armed: 1
+<!-- markdownlint-disable MD041 -->
 
+<p align="center">
+  <img src="docs/img/flix.svg" width=180 alt="Flix logo"><br>
+  <b>Flix</b> (<i>flight + X</i>) — open source ESP32-based quadcopter made from scratch.
+</p>
 
+<table>
+  <tr>
+    <td align=center><strong>Version 1.1</strong> (3D-printed frame)</td>
+    <td align=center><strong>Version 0</strong></td>
+  </tr>
+  <tr>
+    <td><img src="docs/img/flix1.1.jpg" width=500 alt="Flix quadcopter"></td>
+    <td><img src="docs/img/flix.jpg" width=500 alt="Flix quadcopter"></td>
+  </tr>
+</table>
 
+## Features
 
+* Dedicated for education and research.
+* Made from general-purpose components.
+* Simple and clean source code in Arduino (<2k lines firmware).
+* Connectivity using Wi-Fi and MAVLink protocol.
+* Control using USB gamepad, remote control or smartphone.
+* Wireless command line interface and analyzing.
+* Precise simulation with Gazebo.
+* Python library for scripting and automatic flights.
+* Textbook on flight control theory and practice ([in development](https://quadcopter.dev)).
+* *Position control (planned)*.
 
+## It actually flies
 
+See detailed demo video: https://youtu.be/hT46CZ1CgC4.
 
+<a href="https://youtu.be/hT46CZ1CgC4"><img width=500 src="https://i3.ytimg.com/vi/hT46CZ1CgC4/maxresdefault.jpg"></a>
 
+Version 0 demo video: https://youtu.be/8GzzIQ3C6DQ.
 
-> p
-CTL_R_RATE_P = 0.05
-CTL_R_RATE_I = 0.2
-CTL_R_RATE_D = 0.001
-CTL_R_RATE_WU = 0.3
-CTL_P_RATE_P = 0.05
-CTL_P_RATE_I = 0.2
-CTL_P_RATE_D = 0.001
-CTL_P_RATE_WU = 0.3
-CTL_Y_RATE_P = 0.3
-CTL_Y_RATE_I = 0
-CTL_Y_RATE_D = 0
-CTL_Y_RATE_WU = 0.3
-CTL_R_P = 6
-CTL_R_I = 0
-CTL_R_D = 0
-CTL_P_P = 6
-CTL_P_I = 0
-CTL_P_D = 0
-CTL_Y_P = 3
-CTL_P_RATE_MAX = 4
-CTL_R_RATE_MAX = 4
-CTL_Y_RATE_MAX = 5.23599
-CTL_TILT_MAX = 0.35
-IMU_G_BIAS_X = -0.00871904
-IMU_G_BIAS_Y = 0.000919797
-IMU_G_BIAS_Z = 0.00853813
-IMU_ACC_BIAS_X = 0
-IMU_ACC_BIAS_Y = 0
-IMU_ACC_BIAS_Z = 0
-IMU_ACC_SCL_X = 1.09923
-IMU_ACC_SCL_Y = 1.09923
-IMU_ACC_SCL_Z = 1.09923
-EST_ACC_W = 0.003
-EST_R_LPF_A = 0.2
-RC_ZERO_0 = 1000
-RC_ZERO_1 = 1000
-RC_ZERO_2 = 1000
-RC_ZERO_3 = 1000
-RC_ZERO_4 = 1000
-RC_ZERO_5 = 1000
-RC_ZERO_6 = 1000
-RC_ZERO_7 = 1000
-RC_CEN_0 = 1500
-RC_CEN_1 = 1500
-RC_CEN_2 = 1500
-RC_CEN_3 = 1500
-RC_CEN_4 = 1500
-RC_CEN_5 = 1500
-RC_CEN_6 = 1500
-RC_CEN_7 = 1500
-RC_MAX_0 = 2000
-RC_MAX_1 = 2000
-RC_MAX_2 = 2000
-RC_MAX_3 = 2000
-RC_MAX_4 = 2000
-RC_MAX_5 = 2000
-RC_MAX_6 = 2000
-RC_MAX_7 = 2000
-> help
+<a href="https://youtu.be/8GzzIQ3C6DQ"><img width=500 src="https://i3.ytimg.com/vi/8GzzIQ3C6DQ/maxresdefault.jpg"></a>
 
-Welcome to
- _______  __       __  ___   ___
-|   ____||  |     |  | \  \ /  /
-|  |__   |  |     |  |  \  V  /
-|   __|  |  |     |  |   >   <
-|  |     |  `----.|  |  /  .  \
-|__|     |_______||__| /__/ \__\
+Usage in education (RoboCamp): https://youtu.be/Wd3yaorjTx0.
 
-Commands:
+<a href="https://youtu.be/Wd3yaorjTx0"><img width=500 src="https://i3.ytimg.com/vi/Wd3yaorjTx0/sddefault.jpg"></a>
 
-help - show help
-p - show all parameters
-p <name> - show parameter
-p <name> <value> - set parameter
-preset - reset parameters
-time - show time info
-ps - show pitch/roll/yaw
-psq - show attitude quaternion
-imu - show IMU data
-arm - arm the drone
-disarm - disarm the drone
-raw/stab/acro/auto - set mode
-rc - show RC data
-wifi - show Wi-Fi info
-mot - show motor output
-log [dump] - print log header [and data]
-cr - calibrate RC
-ca - calibrate accel
-mfr, mfl, mrr, mrl - test motor (remove props)
-sys - show system info
-reset - reset drone's state
-reboot - reboot the drone
+See the [user builds gallery](docs/user.md):
 
-> imu
-status: OK
-model: MPU-6500 / clone
-who am I: 0x70
-rate: 484
-gyro: 0.011851 -0.061520 0.034031
-acc:  4.957284 -4.194960 7.170201
-acc_mag: 9.674
-landed: 1
-gyro bias:  -0.008719 0.000920 0.008538
-accel bias: 0.000000 0.000000 0.000000
-accel scale:1.099232 1.099232 1.099232
-gyro bias:  -0.008719 0.000920 0.008538
-accel bias: 0.000000 0.000000 0.000000
-accel scale:1.099232 1.099232 1.099232
-landed: 1
-> mrr
-Testing motor 1
-Done
-> mfl
-Testing motor 3
-Done
-> mfr
-Testing motor 2
-Done
-> mrl
-Testing motor 0
-Done
-> cr
-RC calibration not used in Wi-Fi / MAVLink mode
-Control   Ch     Zero   Center Max
-Roll     0      1000   1500   2000   
-Pitch    1      1000   1500   2000   
-Yaw      3      1000   1500   2000   
-Throttle 2      1000   1500   2000   
-Mode     4      1000   1500   2000   
-> ca
-Calibrating accel (6 faces)...
-Do NOT touch during sampling.
-1/6: place on a new face and hold still [8 s]
-2/6: place on a new face and hold still [8 s]
-3/6: place on a new face and hold still [8 s]
-4/6: place on a new face and hold still [8 s]
-5/6: place on a new face and hold still [8 s]
-> ps
-roll: -85.971181 pitch: 50.762881 yaw: 16.129719
-6/6: place on a new face and hold still [8 s]
-Accel calibration done.
-gyro bias:  -0.008719 0.000920 0.008538
-accel bias: -5.934193 -7.576795 0.393183
-accel scale:0.023590 0.013997 0.092937
-> sys
-Chip: ESP32-C3
-Temperature: 41.2 °C
-Free heap: 149628
+<a href="docs/user.md"><img src="docs/img/user/user.jpg" width=500></a>
 
+## Simulation
 
+The simulator is implemented using Gazebo and runs the original Arduino code:
 
+<img src="docs/img/simulator1.png" width=500 alt="Flix simulator">
 
-> imu
-status: OK
-model: MPU-6500 / clone
-who am I: 0x70
-rate: 542
-gyro: -0.001393 -0.000991 0.000318
-acc:  -0.038892 -0.002161 9.876383
-acc_mag: 9.876
-landed: 1
-gyro bias:  -0.035193 0.002457 0.027352
-accel bias: 0.000000 0.000000 0.000000
-accel scale:1.108088 1.108088 1.108088
-gyro bias:  -0.035193 0.002457 0.027352
-accel bias: 0.000000 0.000000 0.000000
-accel scale:1.108088 1.108088 1.108088
-landed: 1
+## Documentation
 
-Welcome to my drone project! This repository documents the building process of a custom drone, including hardware assembly, code, and media demonstrations.
-Project Overview
-I'm making a drone from scratch. Key components include:
+1. [Assembly instructions](docs/assembly.md).
+2. [Usage: build, setup and flight](docs/usage.md).
+3. [Simulation](gazebo/README.md).
+4. [Python library](tools/pyflix/README.md).
 
-Frame and motors
-Flight controller (e.g., ESP32 or Arduino-based)
-Propellers and battery
-Optional: Camera for FPV or sensors for autonomy
+Additional articles:
 
-The goal is to achieve stable flight and basic controls. Future plans: Add GPS navigation and obstacle avoidance.
-Requirements
+* [User builds gallery](docs/user.md).
+* [Firmware architectural overview](docs/firmware.md).
+* [Troubleshooting](docs/troubleshooting.md).
+* [Log analysis](docs/log.md).
 
-Hardware: Drone kit (frame, motors, ESC, flight controller), soldering tools, battery.
-Software: Arduino IDE or PlatformIO for firmware flashing.
-Dependencies: Libraries like Servo for motor control, MPU6050 for gyro/accel.
+## Components
 
-Installation
+|Type|Part|Image|Quantity|
+|-|-|:-:|:-:|
+|Microcontroller board|ESP32 Mini|<img src="docs/img/esp32.jpg" width=100>|1|
+|IMU (and barometer¹) board|GY‑91, MPU-9265 (or other MPU‑9250/MPU‑6500 board)<br>ICM20948V2 (ICM‑20948)³<br>GY-521 (MPU-6050)³⁻¹|<img src="docs/img/gy-91.jpg" width=90 align=center><br><img src="docs/img/icm-20948.jpg" width=100><br><img src="docs/img/gy-521.jpg" width=100>|1|
+|Boost converter (optional, for more stable power supply)|5V output|<img src="docs/img/buck-boost.jpg" width=100>|1|
+|Motor|8520 3.7V brushed motor.<br>Motor with exact 3.7V voltage is needed, not ranged working voltage (3.7V — 6V).<br>Make sure the motor shaft diameter and propeller hole diameter match!|<img src="docs/img/motor.jpeg" width=100>|4|
+|Propeller|55 mm (alternatively 65 mm)|<img src="docs/img/prop.jpg" width=100>|4|
+|MOSFET (transistor)|100N03A or [analog](https://t.me/opensourcequadcopter/33)|<img src="docs/img/100n03a.jpg" width=100>|4|
+|Pull-down resistor|10 kΩ|<img src="docs/img/resistor10k.jpg" width=100>|4|
+|3.7V Li-Po battery|LW 952540 (or any compatible by the size)|<img src="docs/img/battery.jpg" width=100>|1|
+|Battery connector cable|MX2.0 2P female|<img src="docs/img/mx.png" width=100>|1|
+|Li-Po Battery charger|Any|<img src="docs/img/charger.jpg" width=100>|1|
+|Screws for IMU board mounting|M3x5|<img src="docs/img/screw-m3.jpg" width=100>|2|
+|Screws for frame assembly|M1.4x5|<img src="docs/img/screw-m1.4.jpg" height=30 align=center>|4|
+|Frame main part|3D printed²: [`stl`](docs/assets/flix-frame-1.1.stl) [`step`](docs/assets/flix-frame-1.1.step)<br>Recommended settings: layer 0.2 mm, line 0.4 mm, infill 100%.|<img src="docs/img/frame1.jpg" width=100>|1|
+|Frame top part|3D printed: [`stl`](docs/assets/esp32-holder.stl) [`step`](docs/assets/esp32-holder.step)|<img src="docs/img/esp32-holder.jpg" width=100>|1|
+|Washer for IMU board mounting|3D printed: [`stl`](docs/assets/washer-m3.stl) [`step`](docs/assets/washer-m3.step)|<img src="docs/img/washer-m3.jpg" width=100>|2|
+|Controller (recommended)|CC2500 transmitter, like BetaFPV LiteRadio CC2500 (RC receiver/Wi-Fi).<br>Two-sticks gamepad (Wi-Fi only) — see [recommended gamepads](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/setup_view/joystick.html#supported-joysticks).<br>Other⁵|<img src="docs/img/betafpv.jpg" width=100><img src="docs/img/logitech.jpg" width=80>|1|
+|*RC receiver (optional)*|*DF500 or other³*|<img src="docs/img/rx.jpg" width=100>|1|
+|Wires|28 AWG recommended|<img src="docs/img/wire-28awg.jpg" width=100>||
+|Tape, double-sided tape||||
 
+*¹ — barometer is not used for now.*<br>
+*² — this frame is optimized for GY-91 board, if using other, the board mount holes positions should be modified.*<br>
+*³ — you also may use any transmitter-receiver pair with SBUS interface.*
 
-Set up your development environment (e.g., install Arduino IDE).
-Upload the firmware to the flight controller via USB.
+Tools required for assembly:
 
-Usage
+* 3D printer.
+* Soldering iron.
+* Solder wire (with flux).
+* Screwdrivers.
+* Multimeter.
 
-Assemble the drone as shown in the photos below.
-Power on the drone and connect via a controller app or serial monitor.
-Run test flights in a safe area.
-Example command for serial monitoring: screen /dev/ttyUSB0 115200 (on Linux).
+Feel free to modify the design and or code, and create your own improved versions. Send your results to the [official Telegram chat](https://t.me/opensourcequadcopterchat), or directly to the author ([E-mail](mailto:okalachev@gmail.com), [Telegram](https://t.me/okalachev)).
 
+## Schematics
 
-Assembly Photos
-Here are step-by-step images of the drone build:
-Failed to load imageView link
+### Simplified connection diagram
 
-<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(1).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.18 PM (1)">
-<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.18%20PM%20(2).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.18 PM (2)">
-Failed to load imageView link
-<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(1).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (1)">
-<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(2).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (2)">
-<img src="user.image/WhatsApp%20Image%202026-03-02%20at%208.53.19%20PM%20(3).jpeg" alt="WhatsApp Image 2026-03-02 at 8.53.19 PM (3)">
+<img src="docs/img/schematics1.svg" width=700 alt="Flix version 1 schematics">
 
-Failed to load imageView link
-Failed to load imageView link
-Note: These paths assume the images are in a user.image/ folder in your repo. URL-encode spaces (%20) as shown. For better organization, rename files without spaces/parentheses and move to an assets/ folder.
-Demo Videos
-Videos can't play inline on GitHub, so convert to GIFs or link them. Here's how to link:
-Watch Demo Video 1
-Watch Demo Video 2
-For GIFs (after conversion):
-Failed to load imageView link
-Failed to load imageView link
-Troubleshooting
+*(Dashed elements are optional).*
 
-If motors don't spin: Check wiring and calibration.
-Flight instability: Balance propellers and tune PID values.
+Motor connection scheme:
 
-Contributing
-Feel free to fork and submit pull requests with improvements!
-License
-MIT License - free to use and modify.1.4s
+<img src="docs/img/mosfet-connection.png" height=400 alt="MOSFET connection scheme">
+
+You can see a user-contributed [variant of complete circuit diagram](https://miro.com/app/board/uXjVN-dTjoo=/?moveToWidget=3458764612338222067&cot=14) of the drone.
+
+### Notes
+
+* Power ESP32 Mini with Li-Po battery using VCC (+) and GND (-) pins.
+* Connect the IMU board to the ESP32 Mini using VSPI, power it using 3.3V and GND pins:
+
+  |IMU pin|ESP32 pin|
+  |-|-|
+  |GND|GND|
+  |3.3V|3.3V|
+  |SCL *(SCK)*|SVP (GPIO18)|
+  |SDA *(MOSI)*|GPIO23|
+  |SAO *(MISO)*|GPIO19|
+  |NCS|GPIO5|
+
+* Solder pull-down resistors to the MOSFETs.
+* Connect the motors to the ESP32 Mini using MOSFETs, by following scheme:
+
+  |Motor|Position|Direction|Prop type|Motor wires|GPIO|
+  |-|-|-|-|-|-|
+  |Motor 0|Rear left|Counter-clockwise|B|Black & White|GPIO12 *(TDI)*|
+  |Motor 1|Rear right|Clockwise|A|Blue & Red|GPIO13 *(TCK)*|
+  |Motor 2|Front right|Counter-clockwise|B|Black & White|GPIO14 *(TMS)*|
+  |Motor 3|Front left|Clockwise|A|Blue & Red|GPIO15 *(TD0)*|
+
+  Clockwise motors have blue & red wires and correspond to propeller type A (marked on the propeller).
+  Counter-clockwise motors have black & white wires correspond to propeller type B.
+
+* Optionally connect the RC receiver to the ESP32's UART2:
+
+  |Receiver pin|ESP32 pin|
+  |-|-|
+  |GND|GND|
+  |VIN|VCC (or 3.3V depending on the receiver)|
+  |Signal (TX)|GPIO4¹|
+
+*¹ — UART2 RX pin was [changed](https://docs.espressif.com/projects/arduino-esp32/en/latest/migration_guides/2.x_to_3.0.html#id14) to GPIO4 in Arduino ESP32 core 3.0.*
+
+## Resources
+
+* Telegram channel on developing the drone and the flight controller (in Russian): https://t.me/opensourcequadcopter.
+* Official Telegram chat: https://t.me/opensourcequadcopterchat.
+* Detailed article on Habr.com about the development of the drone (in Russian): https://habr.com/ru/articles/814127/.
+
+## Disclaimer
+
+This is a DIY project, and I hope you find it interesting and useful. However, it's not easy to assemble and set up, and it's provided "as is" without any warranties. There's no guarantee that it will work perfectly, or even work at all.
+
+⚠️ The author is not responsible for any damage, injury, or loss resulting from the use of this project. Use at your own risk!
