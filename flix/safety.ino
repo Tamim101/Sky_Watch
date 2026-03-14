@@ -1,7 +1,4 @@
 
-// Copyright (c) 2024 Oleg Kalachev <okalachev@gmail.com>
-// Repository: https://github.com/okalachev/flix
-
 // Fail-safe functions
 
 extern float controlTime;
