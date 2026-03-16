@@ -1,5 +1,4 @@
-// Copyright (c) 2023 Oleg Kalachev <okalachev@gmail.com>
-// Repository: https://github.com/okalachev/flix
+
 
 // sendWiFi and receiveWiFi implementations for the simulation
 
